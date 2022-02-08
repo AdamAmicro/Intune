@@ -4,4 +4,4 @@ $tmp = "$env:TEMP$file"
 $client = New-Object System.Net.WebClient
 $client.DownloadFile($link, $tmp)
 Start-Process "$env:TEMP$file" -ArgumentList "/Q /T:$env:Temp/MOM /C" -Wait -NoNewWindow
-Start-Process "$env:Temp/MOM/setup.exe" -ArgumentList "/qn NOAPM=0 ADD_OPINSIGHTS_WORKSPACE=1 OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE=0 OPINSIGHTS_WORKSPACE_ID='62bd4926-2ef3-457f-b855-767651a26581' OPINSIGHTS_WORKSPACE_KEY='vU17Sy2aOEgleY8sva9/fzjVnFKLVCJvX7bDwmTLhIsS0xf4Hdqx2M/53mMdeW+oJGmlTli/PiHP9xCKG/Tcig==' AcceptEndUserLicenseAgreement=1" -NoNewWindow -Wait
+Start-Process "$env:Temp/MOM/setup.exe" -ArgumentList "/qn NOAPM=0 ADD_OPINSIGHTS_WORKSPACE=1 OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE=0 OPINSIGHTS_WORKSPACE_ID='' OPINSIGHTS_WORKSPACE_KEY='' AcceptEndUserLicenseAgreement=1" -NoNewWindow -Wait
